@@ -7,6 +7,7 @@ function onFormSubmit(){
         insertNewRecord(formData);
     }else{
         upateRecord(formData);
+        selectedRow = null;
     }
     resetFrom();
   }
