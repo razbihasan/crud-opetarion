@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CRUD operation</title>
+</head>
+<body>
+  <table>
+    <thead><h1 style="margin-left:100px;color:brown">Crud Operation</h1></thead>
+    <td>
+      <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit()">
+        <div>
+          <label for="">Full Name*</label>
+          <label class="validation-error hide" id="fullNameValidationError">This fill is required</label>
+          <input type="text" name="fullName" id="fullName">
+        </div>
+        <div>
+          <label for="">Employee code</label>
+          <input type="text" name="empCode" id="empCode">
+        </div>
+        <div>
+          <label for="">Salary</label>
+          <input type="number" name="salary" id="salary">
+        </div>
+        <div>
+          <label for="">comission (%)</label>
+          <input type="number" name="city" id="comission">
+        </div>
+        <div class="form-action-buttons">
+          <input style="font-size: 16px;" type="submit" value="submit">
+        </div>
+      </form>
+    </td>
+
+    <td>
+      <table class="list" id="employeeList">
+        <thead>
+          <tr>
+            <th>Full name</th>
+            <th>Emp code</th>
+            <th>Salary</th>
+            <th>Comission (%)</th>
+            <th>Total</th>
+            <th>Function</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </td>
+
+  </table>
+</body>
+<script src="app.js"></script>
+</html>
